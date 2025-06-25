@@ -1,0 +1,27 @@
+def chatbot():
+    print("PyBot: Hello! I'm PyBot, your chatbot assistant.")
+    print("PyBot: Type something to chat with me (type 'bye' to exit).")
+
+    while True:
+        user = input("You: ").lower()
+
+        if user == 'bye':
+            print("PyBot: Goodbye! Have a nice day.")
+            break
+        elif user in ['hi', 'hello', 'hey']:
+            print("PyBot: Hi there! How can I help you?")
+        elif "how are you" in user:
+            print("PyBot: I'm just a bot, but I'm doing great! Thanks!")
+        elif "your name" in user:
+            print("PyBot: My name is PyBot.")
+        elif "help" in user:
+            print("PyBot: You can say things like 'hi', 'how are you', 'what is your name', or 'bye'.")
+        elif "joke" in user:
+            print("PyBot: Why did the Python programmer go broke? Because he used up all his cache!")
+        elif "time" in user:
+            print("PyBot: Sorry, I can't tell the exact time in Programiz.")
+        else:
+            print("PyBot: Sorry, I don't understand that. Try asking something else.")
+
+# Run chatbot
+chatbot()
